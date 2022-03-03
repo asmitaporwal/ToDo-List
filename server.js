@@ -33,6 +33,6 @@ app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 
 //loadrouters
 app.use('/',require('./server/routes/router'))
-app.listen(3000,()=>{
+app.listen(PORT,()=>{
 console.log(`Server is running on http://localhost:${PORT}`)
 })
